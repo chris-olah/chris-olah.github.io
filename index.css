@@ -1,0 +1,173 @@
+/********************
+Chris Olah Personal Website Styling File 
+Date: September 16 2024
+Author: Chris Olah
+Copyright Chris Olah 2024
+********************/
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+}
+
+body {
+	margin: auto;
+}
+
+.navigation {
+	border-bottom-color: rgb(242, 243, 243);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.navigation li {
+	display: inline-block;
+	font-size: 18px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition: box-shadow 0.5s;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: rgb(122, 130, 136);
+	padding-bottom: 20px;
+}
+
+/*
+li:hover {
+	padding-bottom: 10px;
+	box-shadow: 0 4px rgb(122, 130, 136);
+}
+*/
+
+.nav-links {
+	max-width: 74%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.logo {
+	font-weight: bold;
+	float: left;
+}
+
+.nav-logo {
+	text-align: center;
+}
+
+
+#main {
+	max-width: 70%;
+	margin: auto;
+	margin-top: 0px;
+	color: rgb(73, 78, 82);
+}
+
+
+
+#author_picture {
+	width: 100%; 
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: thick double #b9b9b9;
+
+}
+
+.sidebar {
+	width: 220px;
+	float: left;
+}
+
+.author_avatar {
+	margin: auto;
+	padding: 5px;
+}
+
+.author_name {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color: rgb(38, 124, 185);
+	font-weight: bold;
+}
+
+.author_bio {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.author_url {
+	padding-left: 10px;
+	list-style: none;
+}
+
+.author_url ul {
+	padding-left: 0px;
+}
+
+.author_url li {
+	font-size: 13px;
+	margin-bottom: 8px;
+}
+
+.author_url a {
+	text-decoration: none;
+	color: rgb(73, 78, 82);
+}
+
+
+
+svg {
+	padding-right: 10px;
+	position: relative;
+	top: 2px;
+}
+
+
+
+.page {
+	max-width: 60%;
+	margin-left: 27%;
+}
+
+.page h2 {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.page h2:first-child {
+	margin-top: 10%;
+	margin-bottom: 20px;
+}
+
+
+.news h3 {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+
+.card {
+	max-width: 200px;
+	box-shadow: 0 0 10px 5px grey;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+footer {
+    position: fixed;
+	text-align: center;
+	background-color: rgb(242, 243, 243);
+	color: rgb(155, 161, 166);
+	
+    bottom: 0;
+    width: 100%;
+}
+
