@@ -235,25 +235,6 @@ position:relative;
 
 }
 
-.timeline_item::before{
-
-content:"";
-
-position:absolute;
-
-left:-10px;
-
-top:5px;
-
-width:12px;
-
-height:12px;
-
-background:#2563eb;
-
-border-radius:50%;
-
-}
 
 .timeline_date{
 
