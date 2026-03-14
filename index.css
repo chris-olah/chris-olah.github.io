@@ -225,6 +225,8 @@ padding-left:1.5rem;
 
 margin-top:1rem;
 
+list-style-type: none;
+
 }
 
 .timeline_item{
@@ -232,6 +234,7 @@ margin-top:1rem;
 margin-bottom:1.4rem;
 
 position:relative;
+list-style-type: none;
 
 }
 
@@ -249,9 +252,10 @@ width:12px;
 
 height:12px;
 
-background:transparent;
+background:#2563eb;
 
 border-radius:50%;
+list-style-type: none;
 
 }
 
