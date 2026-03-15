@@ -20,6 +20,8 @@ body {
     }
 }
 
+/* Layout */
+
 #main {
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +51,18 @@ body {
     box-shadow: 0 20px 40px rgba(15,23,42,.08);
 }
 
+/* Sections */
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h2, h3 {
+    margin-bottom: .8rem;
+}
+
 /* Avatar */
+
 .author_avatar {
     text-align: center;
 }
@@ -75,6 +88,7 @@ body {
 }
 
 /* Links */
+
 .author_url {
     list-style: none;
     padding: 0;
@@ -82,10 +96,47 @@ body {
 }
 
 .author_url li {
-    margin: .5rem 0;
+    margin: .6rem 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Base links */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Animated underline */
+
+.author_url a,
+.project_card a {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.author_url a::after,
+.project_card a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #333;
+    transition: width 0.25s ease;
+}
+
+.author_url a:hover::after,
+.project_card a:hover::after {
+    width: 100%;
 }
 
 /* Resume Button */
+
 .resume-btn {
     display: inline-block;
     margin-top: 12px;
@@ -104,7 +155,17 @@ body {
     box-shadow: 0 10px 18px rgba(37,99,235,.35);
 }
 
+/* About */
+
+.bio p {
+    line-height: 1.65;
+    margin-bottom: 1rem;
+    color: #4b5563;
+    font-size: .97rem;
+}
+
 /* Tech badges */
+
 .badges {
     display: flex;
     flex-wrap: wrap;
@@ -121,22 +182,22 @@ body {
 }
 
 /* Timeline */
+
 .timeline {
     border-left: 2px solid #e5e7eb;
     padding-left: 1.5rem;
     margin-top: 1rem;
-    list-style: none; /* remove any bullets */
+    list-style: none;
 }
 
 .timeline_item {
     margin-bottom: 1.4rem;
     position: relative;
-    list-style: none; /* ensure no bullet */
+    list-style: none;
 }
 
-/* REMOVE THE DOTS COMPLETELY */
 .timeline_item::before {
-    display: none; /* hide the pseudo-element */
+    display: none;
 }
 
 .timeline_date {
@@ -152,6 +213,7 @@ body {
 }
 
 /* Projects */
+
 .project_card {
     border: 1px solid #e5e7eb;
     border-radius: 14px;
@@ -165,22 +227,17 @@ body {
     box-shadow: 0 12px 28px rgba(15,23,42,.1);
 }
 
+.project_card h4 {
+    margin-bottom: .4rem;
+}
+
 .project_card p {
     font-size: .95rem;
     color: #4b5563;
 }
 
-.project_card a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.project_card a:hover {
-    text-decoration: underline;
-}
-
 /* News */
+
 .news_list {
     list-style: none;
     padding: 0;
@@ -199,6 +256,7 @@ body {
 }
 
 /* Footer */
+
 footer {
     background: #e5e7eb;
     text-align: center;
@@ -209,6 +267,7 @@ footer {
 }
 
 /* Mobile */
+
 @media(max-width:900px) {
     #main {
         padding: 1.5rem;
